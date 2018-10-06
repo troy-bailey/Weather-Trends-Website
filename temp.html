@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Dashboard</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="adjustments.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Latitude</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                            <!-- <li><a href="#">Link</a></li> -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="temp.html">Max Temperature</a></li>
+                                <li><a href="humid.html">Humidity</a></li>
+                                <li><a href="cloud.html">Cloudiness</a></li>
+                                <li><a href="wind.html">Wind Speed</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="comp.html">Comparison</a></li>
+                            <li><a href="data.html">Data</a></li>
+                            </ul>
+                    </div> 
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+            <!--Normally these medium columns go full wide on small screen sizes-->
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="box white">
+                        <h1><strong>Max Temperature</strong></h1>
+                        <hr />
+                        <img class = "runaround" src="Fig1.png" alt="max temp chart">
+                        <p>The chart above illustrates a basic truth about global geography: Earth has much more land mass in the northern latitudes than in the southern latitudes. This is evidenced by the number of datapoints that I was able ot extract for the two regions. There are many datapoints above 60 degrees north, but very few below -60 degrees south. Regarding max temperature, the chart above shows what would be expected: max tempertures are higher at the equator than it is closer to the poles. By looking at equivalent latitudes (ex -40, +40), the fact that it is summer in the northern hemisphere and winter in the southern hemiphere.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box white">
+                        <h2><strong>Visualizations</strong></h2>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-3 col-md-6">
+                                <img class="thumbs_highlight" src="Fig1.png" alt="max temp chart" width="150", height="150">
+                            </div>
+                            <div class="col-sm-3 col-md-6">
+                                <img class="thumbs" src="Fig2.png" alt="humidity chart" width="150", height="150">
+                            </div>
+                            <div class="col-sm-3 col-md-6">
+                                <img class="thumbs" src="Fig3.png" alt="cloudiness chart" width="150", height="150">
+                            </div>
+                            <div class="col-sm-3 col-md-6">
+                                <img class="thumbs" src="Fig4.png" alt="wind speed chart" width="150", height="150">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+
+    </body>
+
+</html>
